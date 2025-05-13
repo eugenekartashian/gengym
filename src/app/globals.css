@@ -50,32 +50,32 @@
   /* Cyberpunk Theme Colors */
   --cyber-black: #000000;
   --cyber-dark: #0a0c14;
-  --cyber-blue-bright: #18cef2;
-  --cyber-blue: #1089bd;
-  --cyber-blue-dark: #0b4a7d;
-  --cyber-blue-glow: #38bdf8;
+  --cyber-violet-bright: #6c53fd;
+  --cyber-violet: #4a3dff;
+  --cyber-violet-dark: #3a2ec9;
+  --cyber-violet-glow: #8d7cff;
   --cyber-accent: #0ff4;
 
   /* Background */
   --background: var(--cyber-dark);
-  --foreground: #f2f2f2;
+  --foreground: #fffceb;
 
   /* Card and popover elements */
-  --card: #111827;
-  --card-foreground: #f2f2f2;
+  --card: #111022;
+  --card-foreground: #fffceb;
   --popover: #111827;
-  --popover-foreground: #f2f2f2;
+  --popover-foreground: ##fffceb;
 
-  /* Primary - Main blue */
-  --primary: var(--cyber-blue-bright);
+  /* Primary - Main violet */
+  --primary: var(--cyber-violet-bright);
   --primary-foreground: var(--cyber-dark);
 
-  /* Secondary - Darker blue */
-  --secondary: var(--cyber-blue);
+  /* Secondary - Darker violet */
+  --secondary: var(--cyber-violet);
   --secondary-foreground: #ffffff;
 
-  /* Accent - Light blue with glow */
-  --accent: var(--cyber-blue-glow);
+  /* Accent - Light violet with glow */
+  --accent: var(--cyber-violet-glow);
   --accent-foreground: var(--cyber-dark);
 
   /* Muted elements */
@@ -84,29 +84,29 @@
 
   /* System colors */
   --destructive: #ef4444;
-  --border: rgba(24, 206, 242, 0.2);
-  --input: rgba(24, 206, 242, 0.2);
-  --ring: var(--cyber-blue);
+  --border: rgba(108, 83, 253, 0.4);
+  --input: rgba(108, 83, 253, 0.2);
+  --ring: var(--cyber-violet);
 
   /* Chart colors - cyberpunk theme */
-  --chart-1: var(--cyber-blue-bright);
+  --chart-1: var(--cyber-violet-bright);
   --chart-2: #3b82f6;
-  --chart-3: var(--cyber-blue);
+  --chart-3: var(--cyber-violet);
   --chart-4: #06b6d4;
   --chart-5: #0284c7;
 
   /* Sidebar colors */
   --sidebar: var(--cyber-dark);
-  --sidebar-foreground: #f2f2f2;
-  --sidebar-primary: var(--cyber-blue-bright);
+  --sidebar-foreground: #fffceb;
+  --sidebar-primary: var(--cyber-violet-bright);
   --sidebar-primary-foreground: var(--cyber-dark);
-  --sidebar-accent: var(--cyber-blue);
+  --sidebar-accent: var(--cyber-violet);
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(24, 206, 242, 0.2);
-  --sidebar-ring: var(--cyber-blue);
+  --sidebar-ring: var(--cyber-violet);
 
   /* Custom Cyberpunk UI Variables */
-  --cyber-grid-color: rgba(24, 206, 242, 0.05);
+  --cyber-grid-color: rgba(108, 83, 253, 0.1);
   --cyber-glow-primary: rgba(24, 206, 242, 0.2);
   --cyber-glow-strong: rgba(24, 206, 242, 0.5);
   --cyber-line-color: rgba(24, 206, 242, 0.3);
@@ -119,24 +119,24 @@
 .dark {
   /* Background */
   --background: var(--cyber-dark);
-  --foreground: #f2f2f2;
+  --foreground: #fffceb;
 
   /* Card and popover elements */
   --card: #111827;
-  --card-foreground: #f2f2f2;
+  --card-foreground: #fffceb;
   --popover: #111827;
-  --popover-foreground: #f2f2f2;
+  --popover-foreground: #fffceb;
 
-  /* Primary - Main blue */
-  --primary: var(--cyber-blue-bright);
+  /* Primary - Main violet */
+  --primary: var(--cyber-violet-bright);
   --primary-foreground: var(--cyber-dark);
 
-  /* Secondary - Darker blue */
-  --secondary: var(--cyber-blue);
+  /* Secondary - Darker violet */
+  --secondary: var(--cyber-violet);
   --secondary-foreground: #ffffff;
 
-  /* Accent - Light blue with glow */
-  --accent: var(--cyber-blue-glow);
+  /* Accent - Light violet with glow */
+  --accent: var(--cyber-violet-glow);
   --accent-foreground: var(--cyber-dark);
 
   /* Muted elements */
@@ -147,34 +147,39 @@
   --destructive: #ef4444;
   --border: rgba(24, 206, 242, 0.2);
   --input: rgba(24, 206, 242, 0.2);
-  --ring: var(--cyber-blue);
+  --ring: var(--cyber-violet);
 
   /* Chart colors - cyberpunk theme */
-  --chart-1: var(--cyber-blue-bright);
+  --chart-1: var(--cyber-violet-bright);
   --chart-2: #3b82f6;
-  --chart-3: var(--cyber-blue);
+  --chart-3: var(--cyber-violet);
   --chart-4: #06b6d4;
   --chart-5: #0284c7;
 
   /* Sidebar colors */
   --sidebar: var(--cyber-dark);
-  --sidebar-foreground: #f2f2f2;
-  --sidebar-primary: var(--cyber-blue-bright);
+  --sidebar-foreground: #fffceb;
+  --sidebar-primary: var(--cyber-violet-bright);
   --sidebar-primary-foreground: var(--cyber-dark);
-  --sidebar-accent: var(--cyber-blue);
+  --sidebar-accent: var(--cyber-violet);
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgba(24, 206, 242, 0.2);
-  --sidebar-ring: var(--cyber-blue);
+  --sidebar-ring: var(--cyber-violet);
 }
-/* RID OF APPLY LATER */
+
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  *,
+  ::before,
+  ::after {
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring) 50%, transparent);
   }
+
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
   }
-  /* https://tailwindcss.com/docs/upgrade-guide#buttons-use-the-default-cursor */
+
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;

@@ -13,49 +13,49 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
             {/* LEFT BORDER */}
-            <div className="absolute top-8 left-0 w-40 h-40 border-l-2 border-t-2 border-border" />
+            <div className="absolute -top-4 left-0 w-40 h-40 border-l-2 border-t-2 border-border" />
 
             {/* LEFT PART */}
             <div className="lg:col-span-7 space-y-8 relative">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight px-8">
                 <div>
-                  <span className="text-foreground">Transform</span>
+                  <span className="text-foreground">Reshape</span>
                 </div>
                 <div>
                   <span className="text-primary">Your Body</span>
                 </div>
                 <div className="pt-2">
-                  <span className="text-foreground">With Advanced</span>
+                  <span className="text-foreground">With Smart</span>
                 </div>
                 <div className="pt-2">
                   <span className="text-foreground">AI</span>
-                  <span className="text-primary"> Technology</span>
+                  <span className="text-primary"> Power</span>
                 </div>
               </h1>
               {/* LINE SEPARATOR */}
               <div className="h-px w-full bg-gradient-to-r from-primary via-secondary to-primary opacity-50" />
 
-              <p className="text-xl text-muted-foreground w-2/3">
-                Talk to our AI assistant and get personalized diet and workout
-                plans designed just for you.
+              <p className="text-xl text-muted-foreground w-3/3 sm:w-2/3">
+                Chat with our AI assistant to get a custom diet and workout plan
+                tailored for you*
               </p>
               {/* STATS */}
-              <div className="flex items-center justify-center gap-16 mt-10 font-mono">
-                <div className="flex flex-col items-center">
+              <div className="flex flex-wrap sm:flex-nowrap items-center justify-around gap-10 mt-10 font-mono">
+                <div className="flex flex-col items-center w-full">
                   <p className="text-3xl text-primary">500+</p>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
                     PROGRAMS
                   </p>
                 </div>
-                <div className="w-px h-12 bg-border" />
-                <div className="flex flex-col items-center">
-                  <p className="text-3xl text-primary">3min</p>
+                <div className="w-px h-12 bg-border hidden sm:block" />
+                <div className="flex flex-col items-center w-full">
+                  <p className="text-3xl text-primary">3 min</p>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
                     CREATION TIME
                   </p>
                 </div>
-                <div className="w-px h-12 bg-border" />
-                <div className="flex flex-col items-center">
+                <div className="w-px h-12 bg-border hidden sm:block" />
+                <div className="flex flex-col items-center w-full">
                   <p className="text-3xl text-primary">100%</p>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
                     PERSONALIZED
@@ -100,7 +100,7 @@ const HomePage = () => {
                     className="size-full object-cover object-center"
                   /> */}
                   <Image
-                    src="/hero-ai3.png"
+                    src="/hero-ai.png"
                     alt="hero-image"
                     width={1024}
                     height={1536}
@@ -120,7 +120,7 @@ const HomePage = () => {
                   </div>
 
                   {/* IMAGE SHADOW */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/15 to-transparent" />
                 </div>
 
                 {/* TERMINAL OVERLAY */}

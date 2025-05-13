@@ -3,12 +3,12 @@ import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle
 } from '@/components/ui/card';
 import {
-  ChevronRight,
+  // ChevronRight,
   Dumbbell,
   Sparkles,
   Users,
@@ -49,22 +49,22 @@ const UserPrograms = () => {
             </p>
 
             {/* STATS */}
-            <div className="flex items-center justify-center gap-16 mt-10 font-mono">
-              <div className="flex flex-col items-center">
+            <div className="flex flex-wrap sm:flex-nowrap items-center justify-around gap-10 mt-10 font-mono">
+              <div className="flex flex-col items-center w-full">
                 <p className="text-3xl text-primary">500+</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
                   PROGRAMS
                 </p>
               </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="flex flex-col items-center">
-                <p className="text-3xl text-primary">3min</p>
+              <div className="w-px h-12 bg-border hidden sm:block"></div>
+              <div className="flex flex-col items-center w-full">
+                <p className="text-3xl text-primary">3 min</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
                   CREATION TIME
                 </p>
               </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div className="flex flex-col items-center">
+              <div className="w-px h-12 bg-border hidden sm:block"></div>
+              <div className="flex flex-col items-center w-full">
                 <p className="text-3xl text-primary">100%</p>
                 <p className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
                   PERSONALIZED
@@ -154,7 +154,7 @@ const UserPrograms = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-md bg-secondary/10 text-secondary mt-0.5">
+                    <div className="p-2 rounded-md bg-primary/10 text-primary mt-0.5">
                       <AppleIcon className="h-5 w-5" />
                     </div>
                     <div className="flex-1">
@@ -195,14 +195,14 @@ const UserPrograms = () => {
                 </div>
               </CardContent>
 
-              <CardFooter className="px-5 py-4 border-t border-border">
+              {/* <CardFooter className="px-5 py-4 border-t border-border">
                 <Link href={`/programs/${program.id}`} className="w-full">
                   <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                     View Program Details
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-              </CardFooter>
+              </CardFooter> */}
             </Card>
           ))}
         </div>

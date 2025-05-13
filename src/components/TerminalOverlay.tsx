@@ -8,7 +8,7 @@ const TerminalOverlay = () => {
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
             <p className="text-xs text-primary">SYSTEM ACTIVE</p>
           </div>
-          <p className="text-xs text-muted-foreground">ID:78412.93</p>
+          <p className="text-xs text-muted-foreground">ID:3544</p>
         </div>
 
         <p className="text-sm text-foreground mb-2 tracking-tight">
@@ -18,11 +18,11 @@ const TerminalOverlay = () => {
         <div className="space-y-1.5 text-xs text-muted-foreground">
           <div className="flex items-center">
             <div className="text-primary mr-2">01</div>
-            <span>30 min strength training (upper body)</span>
+            <span>35 min strength training (upper body)</span>
           </div>
           <div className="flex items-center">
             <div className="text-primary mr-2">02</div>
-            <span>20 min cardio (moderate intensity)</span>
+            <span>15 min cardio (moderate intensity)</span>
           </div>
           <div className="flex items-center">
             <div className="text-primary mr-2">03</div>

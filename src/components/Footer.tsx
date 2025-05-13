@@ -19,15 +19,20 @@ const Footer = () => {
                 gen<span className="text-primary">gym</span>.ai
               </span>
             </Link>
+            <p className="text-xs text-center text-muted-foreground">
+              © {new Date().getFullYear()} All rights reserved
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} gengym.ai - All rights reserved
+          <p className="text-sm text-center text-muted-foreground flex-1/3">
+            *Note: AI-generated advice is not 100% accurate. Consult a
+            healthcare professional before making major changes to your diet or
+            exercise routine.
           </p>
 
           {/* STATUS */}
           <div className="flex items-center gap-2 px-3 py-2 border border-border rounded-md bg-background/50">
             <div className="w-2 h-2 rounded-full bg-green-500"></div>
-            <span className="text-xs font-mono">SYSTEM OPERATIONAL</span>
+            <span className="text-xs font-mono">OPERATION ACTIVE</span>
           </div>
         </div>
       </div>

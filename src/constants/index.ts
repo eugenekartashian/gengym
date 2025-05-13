@@ -2,7 +2,7 @@ export const USER_PROGRAMS = [
   {
     id: 1,
     first_name: 'Sarah',
-    profilePic: 'https://randomuser.me/api/portraits/women/74.jpg',
+    profilePic: '/1.jpg',
     fitness_goal: 'Weight Loss',
     height: '5\'6"',
     weight: '165 lbs',
@@ -24,7 +24,7 @@ export const USER_PROGRAMS = [
         'This program focuses on building a consistent exercise habit with joint-friendly movements that protect your lower back. The mix of cardio and strength training supports weight loss while preserving muscle mass.'
     },
     diet_plan: {
-      title: 'Balanced Nutrition Plan (Lactose-Free)',
+      title: 'Balanced Nutrition (Lactose-Free)',
       daily_calories: '1,600 calories',
       macros: { protein: '30%', carbs: '40%', fats: '30%' },
       meal_examples: [
@@ -52,7 +52,7 @@ export const USER_PROGRAMS = [
   {
     id: 2,
     first_name: 'Michael',
-    profilePic: 'https://randomuser.me/api/portraits/men/75.jpg',
+    profilePic: '/2.jpg',
     fitness_goal: 'Muscle Gain',
     height: '5\'10"',
     weight: '170 lbs',
@@ -63,7 +63,7 @@ export const USER_PROGRAMS = [
     equipment_access: 'Full gym',
     dietary_restrictions: 'None',
     workout_plan: {
-      title: 'Hypertrophy-Focused Muscle Building',
+      title: 'Hypertrophy Muscle Building',
       weekly_schedule: [
         { day: 'Monday', focus: 'Chest & Triceps', duration: '45 min' },
         { day: 'Tuesday', focus: 'Back & Biceps', duration: '45 min' },
@@ -103,7 +103,7 @@ export const USER_PROGRAMS = [
   {
     id: 3,
     first_name: 'David',
-    profilePic: 'https://randomuser.me/api/portraits/men/76.jpg',
+    profilePic: '/3.jpg',
     fitness_goal: 'General Fitness',
     height: '5\'4"',
     weight: '130 lbs',
