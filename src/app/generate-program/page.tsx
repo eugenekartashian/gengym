@@ -184,7 +184,7 @@ const GenerateProgramPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* AI ASSISTANT CARD */}
           <Card className="bg-card/90 backdrop-blur-sm border border-border overflow-hidden relative">
-            <div className="aspect-video flex flex-col items-center justify-center p-6 relative">
+            <div className=" flex flex-col items-center justify-center p-6 relative -webkit-box-pack: center">
               {/* VOICE ANIMATION WHEN AI SPEAKING */}
               <div
                 className={`absolute inset-0 ${
@@ -210,7 +210,7 @@ const GenerateProgramPage = () => {
               </div>
 
               {/* AI IMAGE */}
-              <div className="relative size-32 mb-4">
+              <div className="relative size-32 mb-4 mx-auto">
                 <div
                   className={`absolute inset-0 bg-primary opacity-10 rounded-full blur-lg ${
                     isSpeaking ? 'animate-pulse' : ''
@@ -268,9 +268,9 @@ const GenerateProgramPage = () => {
           <Card
             className={`bg-card/90 backdrop-blur-sm border overflow-hidden relative`}
           >
-            <div className="aspect-video flex flex-col items-center justify-center p-6 relative">
+            <div className=" flex flex-col items-center justify-center p-6 relative -webkit-box-pack: center">
               {/* User Image */}
-              <div className="relative size-32 mb-4">
+              <div className="relative size-32 mb-4 mx-auto">
                 <img
                   src={user?.imageUrl}
                   alt="User"
